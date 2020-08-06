@@ -59,10 +59,10 @@ module "db" {
   subnet_ids = data.aws_subnet_ids.all.ids
 
   # DB parameter group
-  family = "postgres9.6"
+  family = "postgres12"
 
   # DB option group
-  major_engine_version = "9.6"
+  major_engine_version = "12"
 
   # Snapshot name upon DB deletion
   final_snapshot_identifier = "lithopsdb"
